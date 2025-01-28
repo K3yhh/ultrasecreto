@@ -23,6 +23,7 @@ noButton.addEventListener("click", function () {
     const imageIndex = Math.min(noCount, MAX_IMAGES);
     changeImage(imageIndex);
     resizeYesButton();
+    resizeNoButton();
     updateNoButtonText();
     if (noCount === MAX_IMAGES) {
       play = false;
@@ -43,6 +44,14 @@ function resizeYesButton() {
   const newFontSize = fontSize * 1.6;
 
   yesButton.style.fontSize = `${newFontSize}px`;
+}
+
+function resizeNoButton() {
+  const computedStyle2 = window.getComputedStyle(noButton);
+  const fontSize2 = parseFloat(computedStyle2.getPropertyValue("font-size"));
+  const newFontSize2 = fontSize2 / 1.6;
+
+  noButton.style.fontSize = `${newFontSize2}px`;
 }
 
 function generateMessage(noCount) {
