@@ -65,6 +65,10 @@ body {
   background-color: #f03e3e;
 }
 
+.btn--carta {
+  background-color: #ff0080;
+}
+
 .hidden {
   display: none;
 }
