@@ -12,8 +12,6 @@ const MAX_IMAGES = 10;
 let play = true;
 let noCount = 0;
 
-buttonsContainer2.classList.add("hidden");
-
 yesButton.addEventListener("click", handleYesClick);
 
 noButton.addEventListener("click", function () {
