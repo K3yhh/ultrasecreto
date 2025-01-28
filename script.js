@@ -1,6 +1,7 @@
 "use strict";
 
 const titleElement = document.querySelector(".title");
+const buttonsContainer2 = document.querySelector(".buttons2");
 const buttonsContainer = document.querySelector(".buttons");
 const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
@@ -10,6 +11,8 @@ const MAX_IMAGES = 10;
 
 let play = true;
 let noCount = 0;
+
+buttonsContainer2.classList.add("hidden");
 
 yesButton.addEventListener("click", handleYesClick);
 
