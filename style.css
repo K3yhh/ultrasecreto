@@ -45,15 +45,6 @@ body {
   gap: 1rem;
 }
 
-.buttons2 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
-  gap: 1rem;
-}
-
 .btn {
   padding: 1.5rem 2.5rem;
   border: none;
@@ -72,6 +63,15 @@ body {
 
 .btn--no {
   background-color: #f03e3e;
+}
+
+.buttons2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
 }
 
 .btn--carta {
