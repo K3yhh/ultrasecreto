@@ -13,7 +13,7 @@ const MAX_IMAGES = 10;
 let play = true;
 let noCount = 0;
 
-cartaButton.classList.add("hidden")
+cartaButton.classList.add("hidden");
 
 yesButton.addEventListener("click", handleYesClick);
 
@@ -33,6 +33,7 @@ noButton.addEventListener("click", function () {
 function handleYesClick() {
   titleElement.innerHTML = "CHIII TE AMOOO";
   buttonsContainer.classList.add("hidden");
+  cartaButton.classList.remove("hidden");
   changeImage("yes");
 }
 
